@@ -1,0 +1,36 @@
+#size
+{
+    height:50px;
+    width:130px;
+}
+.navbar-nav
+{
+    float:right;
+    margin-left: 750px;
+}
+.nav-item
+{
+    font-size:15px;
+    
+}
+.content
+{
+    background-color:rgba(249,214,184,0.3);
+    height:950px;;
+    width:100%;
+    
+}
+
+.container
+{
+    border: 2px solid black;
+    padding-top: 40px;
+    
+}
+label
+{
+    font-family: 'Slabo 27px', serif;
+    font-weight: 1500;
+}
+    
+

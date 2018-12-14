@@ -1,0 +1,592 @@
+<html>
+    <head>
+        <title> FastFix</title>
+        <link rel="shortcut icon" href="images/title.png" type="image/png">
+        <link href="personal_info.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img id="size"src="images/mainlogo3.png"></a>
+  
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+    
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">How it Works</a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="landing.html">Select your Mobile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Why Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Contact Us</a>
+      </li>
+    </ul> 
+      
+   
+  </div>
+</nav>
+<div class="content">
+         
+<fieldset class="container">
+<legend style="font-family: 'Arvo', serif;padding-top: 30px;"> &nbsp;Enter Your Personal Details: <i class="fas fa-edit"></i></legend>
+<form name="myform" onsubmit="validate(); return false;">
+ <div class="row">
+    <div class="col">
+     <label >First Name </label>
+      <input id="customControlValidation1" name="firstname" type="text" class="form-control" placeholder="First name" required>
+      <div id="p1"></div>
+    </div>
+    
+    <div class="col">
+     <label for="inputEmail4">Last Name</label>
+      <input type="text" id="customControlValidation2" name="lastname" class="form-control" placeholder="Last name" required>
+      <div id="p2"></div>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="text" class="form-control" name="email" id="inputEmail4"name="email" placeholder="Email" required>
+      <div id="p3"></div>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" id="contactnumber" name="number" placeholder="Phone Number" maxlength="10" required>
+      <div id="p4"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Address" required>
+  </div>
+  
+<div class="form-row">
+<div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <input list="states" id="inputState" class="form-control" placeholder="State" required>
+       <datalist id="states">
+            <option value="Andhra Pradesh"></option>
+            <option value="Arunachal Pradesh"></option>
+            <option value="Assam"></option>
+            <option value="Bihar"></option>
+            <option value="Chhattisgarh"></option>
+            <option value="Goa"></option>
+            <option value="Gujarat"></option>
+            <option value="Haryana"></option>
+            <option value="Himachal Pradesh"></option>
+            <option value="Jammu and Kashmir"></option>
+            <option value="Jharkhand"></option>
+            <option value="Karnataka"></option>
+            <option value="Kerala"></option>
+            <option value="Madhya Pradesh"></option>
+            <option value="Maharashtra"></option>
+            <option value="Manipur"></option>
+            <option value="Meghalaya"></option>
+            <option value="Mizoram"></option>
+            <option value="Nagaland"></option>
+            <option value="Odisha"></option>
+            <option value="Punjab"></option>
+            <option value="Rajasthan"></option>
+            <option value="Sikkim"></option>
+            <option value="Tamil Nadu"></option>
+            <option value="Telangana"></option>
+            <option value="Tripura"></option>
+            <option value="Uttar Pradesh"></option>
+            <option value="Uttarakhand"></option>
+            <option value="West Bengal"></option>
+   
+</datalist>
+</div>
+<div class="form-group col-md-4">
+      <label for="inputCity">City</label>
+      <input type="text" name="city" class="form-control" id="inputCity" placeholder="City" required>
+      <div id="p5"></div>
+    </div>
+<div class="form-group col-md-2">
+<label for="inputZip">Pincode</label>
+<input type="text" class="form-control" name="pin" id="inputZip" placeholder="Pincode" required>
+<div id="p6"></div>
+</div>
+</div>
+<br>
+
+<label>Enter the date and time for pickup according to your convenience !</label>
+<hr style="color: 5px solid black">
+
+<div class="form-row">
+<div class="form-group col-md-3">
+<label for="inputZip">Date</label>
+<input type="date" class="form-control" id="inputZip" required>
+</div> 
+<div class="form-group col-md-3">
+<label for="inputZip">From </label>
+<input type="time" class="form-control" id="inputZip" required>
+</div> 
+
+<div class="form-group col-md-3">
+<label for="inputZip">To </label>
+<input type="time" class="form-control" id="inputZip" required>
+</div>  
+</div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" required>
+      <label class="form-check-label" for="gridCheck">
+        I agree all the terms and conditions.
+      </label>
+    </div><html>
+    <head>
+        <title> FastFix</title>
+        <link rel="shortcut icon" href="images/title.png" type="image/png">
+        <link href="personal_info.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img id="size"src="images/mainlogo3.png"></a>
+  
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+    
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">How it Works</a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="landing.html">Select your Mobile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Why Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Contact Us</a>
+      </li>
+    </ul> 
+      
+   
+  </div>
+</nav>
+<div class="content">
+         
+<fieldset class="container">
+<legend style="font-family: 'Arvo', serif;padding-top: 30px;"> &nbsp;Enter Your Personal Details: <i class="fas fa-edit"></i></legend>
+<form name="myform" onsubmit="validate(); return false;">
+ <div class="row">
+    <div class="col">
+     <label >First Name </label>
+      <input id="customControlValidation1" name="firstname" type="text" class="form-control" placeholder="First name" required>
+      <div id="p1"></div>
+    </div>
+    
+    <div class="col">
+     <label for="inputEmail4">Last Name</label>
+      <input type="text" id="customControlValidation2" name="lastname" class="form-control" placeholder="Last name" required>
+      <div id="p2"></div>
+    </div>
+  </div>
+  <br>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="text" class="form-control" name="email" id="inputEmail4"name="email" placeholder="Email" required>
+      <div id="p3"></div>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" id="contactnumber" name="number" placeholder="Phone Number" maxlength="10" required>
+      <div id="p4"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Address" required>
+  </div>
+  
+<div class="form-row">
+<div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <input list="states" id="inputState" class="form-control" placeholder="State" required>
+       <datalist id="states">
+            <option value="Andhra Pradesh"></option>
+            <option value="Arunachal Pradesh"></option>
+            <option value="Assam"></option>
+            <option value="Bihar"></option>
+            <option value="Chhattisgarh"></option>
+            <option value="Goa"></option>
+            <option value="Gujarat"></option>
+            <option value="Haryana"></option>
+            <option value="Himachal Pradesh"></option>
+            <option value="Jammu and Kashmir"></option>
+            <option value="Jharkhand"></option>
+            <option value="Karnataka"></option>
+            <option value="Kerala"></option>
+            <option value="Madhya Pradesh"></option>
+            <option value="Maharashtra"></option>
+            <option value="Manipur"></option>
+            <option value="Meghalaya"></option>
+            <option value="Mizoram"></option>
+            <option value="Nagaland"></option>
+            <option value="Odisha"></option>
+            <option value="Punjab"></option>
+            <option value="Rajasthan"></option>
+            <option value="Sikkim"></option>
+            <option value="Tamil Nadu"></option>
+            <option value="Telangana"></option>
+            <option value="Tripura"></option>
+            <option value="Uttar Pradesh"></option>
+            <option value="Uttarakhand"></option>
+            <option value="West Bengal"></option>
+   
+</datalist>
+</div>
+<div class="form-group col-md-4">
+      <label for="inputCity">City</label>
+      <input type="text" name="city" class="form-control" id="inputCity" placeholder="City" required>
+      <div id="p5"></div>
+    </div>
+<div class="form-group col-md-2">
+<label for="inputZip">Pincode</label>
+<input type="text" class="form-control" name="pin" id="inputZip" placeholder="Pincode" required>
+<div id="p6"></div>
+</div>
+</div>
+<br>
+
+<label>Enter the date and time for pickup according to your convenience !</label>
+<hr style="color: 5px solid black">
+
+<div class="form-row">
+<div class="form-group col-md-3">
+<label for="inputZip">Date</label>
+<input type="date" class="form-control" id="inputZip" required>
+</div> 
+<div class="form-group col-md-3">
+<label for="inputZip">From </label>
+<input type="time" class="form-control" id="inputZip" required>
+</div> 
+
+<div class="form-group col-md-3">
+<label for="inputZip">To </label>
+<input type="time" class="form-control" id="inputZip" required>
+</div>  
+</div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" required>
+      <label class="form-check-label" for="gridCheck">
+        I agree all the terms and conditions.
+      </label>
+    </div>
+  </div><center><input type="submit" class="btn btn-dark" value="Repair">&nbsp;&nbsp;<input type="submit" class="btn btn-dark" value="LogOut"></center>
+  
+</form>
+             
+</fieldset>
+</div>
+
+<script>
+function validate()
+    {
+        var fname=document.forms["myform"]["firstname"].value;
+        var lname=document.forms["myform"]["lastname"].value;
+        var city=document.forms["myform"]["city"].value;
+        var email=document.forms["myform"]["email"].value;
+        var number=document.forms["myform"]["number"].value;
+        var pincode=document.forms["myform"]["pin"].value;
+        
+        
+        var alphaExp = /^[a-zA-Z]+$/;
+        var emailExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        var numericExpression =/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        var pin= /^[1-9][0-9]{5}$/;
+        
+        
+        function testfirstname()
+        {
+            if(alphaExp.test(fname)===true){
+                document.getElementById("p1").innerHTML="";
+                return true;
+            }
+            else if(alphaExp.test(fname)===false)
+                {
+                   document.getElementById("p1").innerHTML="Enter valid first name.";
+                    document.getElementById("p1").style.fontSize = "xx-small";
+                    document.getElementById("p1").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        function testlastname()
+        {
+            if(alphaExp.test(lname)===true){
+                document.getElementById("p2").innerHTML="";
+                return true;
+            }
+            else if(alphaExp.test(lname)===false)
+                {
+                   document.getElementById("p2").innerHTML="Enter valid last name.";
+                    document.getElementById("p2").style.fontSize = "xx-small";
+                    document.getElementById("p2").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testemail()
+        {
+            if(emailExp.test(email)===true){
+                document.getElementById("p3").innerHTML="";
+                return true;}
+            else if(emailExp.test(email)===false)
+                {
+                   document.getElementById("p3").innerHTML="Enter valid email address.";
+                    document.getElementById("p3").style.fontSize = "xx-small";
+                    document.getElementById("p3").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        function testnumber()
+        {
+            if(numericExpression.test(number)===true){
+                document.getElementById("p4").innerHTML="";
+                return true;}
+            else if(numericExpression.test(number)===false)
+                {
+                   document.getElementById("p4").innerHTML="Enter valid contact number.";
+                    document.getElementById("p4").style.fontSize = "xx-small";
+                    document.getElementById("p4").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testcity()
+        {
+            if(alphaExp.test(city)===true){
+                document.getElementById("p5").innerHTML="";
+                return true;}
+            else if(alphaExp.test(city)===false)
+                {
+                   document.getElementById("p5").innerHTML="Enter valid name of a city.";
+                    document.getElementById("p5").style.fontSize = "xx-small";
+                    document.getElementById("p5").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testpincode()
+        {
+            if(pin.test(pincode)===true){
+                document.getElementById("p6").innerHTML="";
+                return true;}
+            else if(pin.test(pincode)===false)
+                {
+                   document.getElementById("p6").innerHTML="Enter a valid pincode. ";
+                    document.getElementById("p6").style.fontSize = "xx-small";
+                    document.getElementById("p6").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        if(testfirstname()==true)
+        {
+        if(testlastname()==true)
+        {
+       
+        if(testemail()==true)
+        {
+        
+        if(testnumber()==true)
+        {
+      
+        if(testcity()==true)
+        {
+        
+        if(testpincode()==true)
+        {
+                return true;
+        }
+        }
+        }
+        }
+        }
+        }
+        
+        return false;
+        
+   
+}
+       
+</script>
+</body>
+</html>
+
+
+
+  </div><center><input type="submit" class="btn btn-dark" value="Repair">&nbsp;&nbsp;<input type="submit" class="btn btn-dark" value="LogOut"></center>
+  
+</form>
+             
+</fieldset>
+</div>
+
+<script>
+function validate()
+    {
+        var fname=document.forms["myform"]["firstname"].value;
+        var lname=document.forms["myform"]["lastname"].value;
+        var city=document.forms["myform"]["city"].value;
+        var email=document.forms["myform"]["email"].value;
+        var number=document.forms["myform"]["number"].value;
+        var pincode=document.forms["myform"]["pin"].value;
+        
+        
+        var alphaExp = /^[a-zA-Z]+$/;
+        var emailExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        var numericExpression =/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        var pin= /^[1-9][0-9]{5}$/;
+        
+        
+        function testfirstname()
+        {
+            if(alphaExp.test(fname)===true){
+                document.getElementById("p1").innerHTML="";
+                return true;
+            }
+            else if(alphaExp.test(fname)===false)
+                {
+                   document.getElementById("p1").innerHTML="Enter valid first name.";
+                    document.getElementById("p1").style.fontSize = "xx-small";
+                    document.getElementById("p1").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        function testlastname()
+        {
+            if(alphaExp.test(lname)===true){
+                document.getElementById("p2").innerHTML="";
+                return true;
+            }
+            else if(alphaExp.test(lname)===false)
+                {
+                   document.getElementById("p2").innerHTML="Enter valid last name.";
+                    document.getElementById("p2").style.fontSize = "xx-small";
+                    document.getElementById("p2").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testemail()
+        {
+            if(emailExp.test(email)===true){
+                document.getElementById("p3").innerHTML="";
+                return true;}
+            else if(emailExp.test(email)===false)
+                {
+                   document.getElementById("p3").innerHTML="Enter valid email address.";
+                    document.getElementById("p3").style.fontSize = "xx-small";
+                    document.getElementById("p3").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        function testnumber()
+        {
+            if(numericExpression.test(number)===true){
+                document.getElementById("p4").innerHTML="";
+                return true;}
+            else if(numericExpression.test(number)===false)
+                {
+                   document.getElementById("p4").innerHTML="Enter valid contact number.";
+                    document.getElementById("p4").style.fontSize = "xx-small";
+                    document.getElementById("p4").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testcity()
+        {
+            if(alphaExp.test(city)===true){
+                document.getElementById("p5").innerHTML="";
+                return true;}
+            else if(alphaExp.test(city)===false)
+                {
+                   document.getElementById("p5").innerHTML="Enter valid name of a city.";
+                    document.getElementById("p5").style.fontSize = "xx-small";
+                    document.getElementById("p5").style.color = "red";
+                    return false;
+                }
+            
+        }
+        function testpincode()
+        {
+            if(pin.test(pincode)===true){
+                document.getElementById("p6").innerHTML="";
+                return true;}
+            else if(pin.test(pincode)===false)
+                {
+                   document.getElementById("p6").innerHTML="Enter a valid pincode. ";
+                    document.getElementById("p6").style.fontSize = "xx-small";
+                    document.getElementById("p6").style.color = "red";
+                    return false;
+                }
+            
+        }
+        
+        if(testfirstname()==true)
+        {
+        if(testlastname()==true)
+        {
+       
+        if(testemail()==true)
+        {
+        
+        if(testnumber()==true)
+        {
+      
+        if(testcity()==true)
+        {
+        
+        if(testpincode()==true)
+        {
+                return true;
+        }
+        }
+        }
+        }
+        }
+        }
+        
+        return false;
+        
+   
+}
+       
+</script>
+</body>
+</html>
+
+

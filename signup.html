@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title> FastFix</title>
+        <link rel="shortcut icon" href="images/title.png" type="image/png">
+        <link href="signup.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img id="size"src="images/mainlogo3.png"></a>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">How it Works</a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="landing.html">Select your Mobile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Why Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Contact Us</a>
+      </li>
+    </ul>
+
+
+  </div>
+</nav>
+
+        <div class="content">
+        <div class="loginbox">
+            <img src="images/user.png" class="avatar">
+            <h1 class="h1-css">Sign Up</h1>
+            <form name="myform" onsubmit="val(); return false;">
+                <div style="overflow: hidden">
+                <p style="float: left;">Full name </p><div id="e1"></div>
+                </div>
+                <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                <div style="overflow: hidden">
+                <p style="float: left;">Email</p><div id="e2"></div>
+                </div>
+                <input type="text" id="email" placeholder="Enter Email Address">
+                <div style="overflow: hidden">
+                <p style="float: left;">Password</p><div id="e3"></div>
+                </div>
+                <input type="password" id="pass" name="" placeholder="Enter Password">
+                <div style="overflow: hidden">
+                <p style="float: left;">Confirm Password</p><div id="e4"></div>
+                </div>
+                <input type="password" id="cpass" name="" placeholder="Enter Password">
+                <div style="overflow: hidden;">
+                <p style="float: left;">Username</p><div id="e5"></div>
+                </div>
+                <input type="text" id="username" name="" placeholder="Enter Username" maxlength="10">
+
+                <center> <input type="submit" value="Sign Up" name="submit" class="register"></center>
+              </form>
+
+        </div>
+        </div>
+        <script>
+          function val(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("pass").value;
+            var cpass =document.getElementById("cpass").value;
+            var username = document.getElementById("username").value;
+           
+              
+
+            var alphaExp = /^[a-zA-Z]+$/;
+            var emailExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+            var passExp=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+            var userExp = /^[a-zA-Z0-9]+$/;
+            
+
+            function testname(){
+            if(alphaExp.test(name)===true){
+              document.getElementById("e1").innerHTML="";
+              return true;
+            }
+            else if(alphaExp.test(name)===false){
+              document.getElementById("e1").innerHTML="&nbsp; Only alphabets allowed.";
+                document.getElementById("e1").style.fontSize = "xx-small";
+                    document.getElementById("e1").style.color = "red";
+              return false;
+            }
+            }
+            function testemail(){
+            if(emailExp.test(email)===true){
+              document.getElementById("e2").innerHTML="";
+              return true;
+            }
+            else if(emailExp.test(email)===false){
+              document.getElementById("e2").innerHTML="&nbsp;Invalid Email";
+                document.getElementById("e2").style.fontSize = "xx-small";
+                    document.getElementById("e2").style.color = "red";
+              return false;
+            }
+            }
+            function testpass(){
+              if(passExp.test(pass)===true){
+                document.getElementById("e3").innerHTML="";
+                return true;
+              }
+              else if(passExp.test(pass)===false){
+                document.getElementById("e3").innerHTML="&nbsp;Invalid Format";
+                  document.getElementById("e3").style.fontSize = "xx-small";
+                    document.getElementById("e3").style.color = "red";
+                return false;
+              }
+            }
+            function confpass(){
+              if(pass==cpass){
+                document.getElementById("e4").innerHTML="";
+                return true;
+              }
+              else if(pass!=cpass){
+                document.getElementById("e4").innerHTML="&nbsp; Invalid password!";
+                  document.getElementById("e4").style.fontSize = "xx-small";
+                    document.getElementById("e4").style.color = "red";
+                return false;
+              }
+            }
+            function testuser(){
+              if(userExp.test(username)===true){
+                ocument.getElementById("e5").innerHTML="";
+                return true;
+              }
+              else if(userExp.test(username)===false){
+                document.getElementById("e5").innerHTML="&nbsp; Invalid username";
+                  document.getElementById("e5").style.fontSize = "xx-small";
+                    document.getElementById("e5").style.color = "red";
+                return false;
+              }
+            }
+
+            if(testname()==true){
+              if(testemail()==true){
+                if(testpass()==true){
+                  if(confpass()==true){
+                    if(testuser()==true){
+                      
+                        location.href='login.html';
+                      
+                    }
+                  }
+                }
+              }
+            }
+            return false;
+          }
+
+        </script>
+    </body>
+</html>

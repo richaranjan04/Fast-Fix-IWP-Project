@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title> FastFix</title><link rel="shortcut icon" href="images/title.png" type="image/png">
+        <link href="login.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    </head>
+    
+    <body>
+ <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img id="size"src="images/mainlogo3.png"></a>
+  
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+    
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">How it Works</a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="landing.html">Select your Mobile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Why Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="landing.html">Contact Us</a>
+      </li>
+    </ul> 
+      
+   
+  </div>
+</nav>
+        
+        <div class="content">
+        <div class="loginbox">
+            <img src="images/user.png" class="avatar">
+            <h1 class="h1-css">Login</h1>
+            <form name="myform" onsubmit="val(); return false;">
+               <div style="overflow: hidden">
+                <p style="float: left;">Username</p><div id="p1"></div>
+                </div>
+                <input type="text" name="name" placeholder="Enter Username" maxlength="10" required>
+                <div style="overflow: hidden;">
+                <p style="float: left;">Password</p><div id="p2"></div>
+                </div>
+                <input type="password" name="pass" placeholder="Enter Password" id="pass" required>
+                <input type="submit" value="Login" name="submit" class="register">
+                
+                <a href="#"> Forgot Password?</a>
+                <br>
+                <a href="signup.html"> Signup</a>
+
+            </form>
+
+        </div>
+        </div>
+        
+        <script>
+            function val()
+        {
+        var name=document.forms["myform"]["name"].value;
+        var password=document.forms["myform"]["pass"].value;
+        var passExp=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+        var userExp = /^[a-zA-Z0-9]+$/;
+            
+        function testname()
+        {
+            if(userExp.test(name)===true){
+                document.getElementById("p1").innerHTML="";
+                return true;
+            }
+            else if(userexp.test(name)===false)
+                {
+                   document.getElementById("p1").innerHTML="&nbsp;&nbsp;Incoreect username";
+                   
+                    
+                    return false;
+                }
+            
+        }
+        
+        function testpass()
+        {
+            if(passExp.test(password)===true){
+                document.getElementById("p2").innerHTML="";
+                return true;
+            }
+            else if(passExp.test(password)==false)
+                {
+                   document.getElementById("p2").innerHTML="&nbsp;&nbsp;Invalid Password! ";
+                    document.getElementById("p2").style.fontSize = "xx-small";
+                    document.getElementById("p2").style.color = "red";
+                    
+                   
+                    return false;
+                }
+            
+        }
+            
+        if(testname()==true)
+        {
+        if(testpass()==true)
+        {
+                window.location.href='phone_info.html';
+        }
+        }
+          return false;  
+        }
+        </script>
+    </body>
+</html>

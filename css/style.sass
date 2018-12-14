@@ -1,0 +1,574 @@
+$headingColor: #7D7E81
+$SecondButtonTextColor: #5D83C3
+$thirdSectionColor: #FAFAFA
+$QuoteButtonColor: #786dd1
+
+body
+	font-family: 'Raleway', sans-serif
+
+
+span.divider
+	display: block
+	width: 150px
+	height: 2px
+	background-color: $headingColor
+	margin: auto
+
+h4
+	text-align: center
+
+.tncList
+	margin-top: 20px
+
+
+.FirstSection
+	background: 
+		image: linear-gradient(rgba(50, 144, 212, 0.8),rgba(120, 109, 209,0.8)), url("../images/brokenScreen.jpeg")
+		position: center
+		size: cover
+	color: white
+	padding-bottom: 100px
+
+	.navbar
+		padding: 10px 30px 10px 30px
+		border: none
+
+	.FirstSectionContent
+		margin-top: 100px
+
+		.leftSection
+			img
+				height: 400px
+				display: block
+				margin: auto
+
+		.rightSection
+			padding: 20px 100px 0 0
+			// padding-right: 100px
+
+			h1
+				font-size: 50px
+
+			p
+				margin-top: 30px
+				font-size: 17px
+
+			.FirstButton
+				font-size: 17px
+				border-radius: 2px
+				border: 2px solid white
+				// width: 60px
+				// margin-left: auto
+				// margin-right: auto
+				background: none
+				margin-top: 40px
+				margin-right: 10px
+				transition: 0.3s ease
+
+				&:hover
+					color: #5D83C3
+					background: white
+
+			.SecondButton
+				font-size: 17px
+				border-radius: 2px
+				border: 2px solid white
+				background: white
+				color: $SecondButtonTextColor
+				margin-top: 40px
+				transition: 0.3s ease
+
+				&:hover
+					box-shadow: 8px 8px 26px -6px black
+
+
+.SecondSection
+	padding: 40px 0 
+	background-color: $thirdSectionColor
+	h4
+		color: $headingColor
+		text-align: center
+
+	.row
+		.col-sm-3
+			padding-top: 100px
+
+			img
+				display: block
+				margin: auto
+
+			h3
+				text-align: center
+				font-weight: 800px
+				margin-top: 30px
+				font-size: 20px
+
+			p
+				text-align: center
+				color: $headingColor
+
+.BrandSection
+	padding: 40px 0
+	// background-color: $thirdSectionColor
+
+	ul
+		margin-top: 50px
+
+		li
+			a
+				color: $QuoteButtonColor
+
+	.tab-content
+		margin-top: 30px
+
+		.row
+			img
+				// margin-bottom: 50px
+				display: block
+				margin: auto
+				transition: 0.3s ease
+
+				&:hover
+					transform: scale(1.1)
+
+			p
+				margin: 10px 0 50px 0
+				text-align: center
+
+				
+
+
+				
+.whyUsSection
+	background-color: $thirdSectionColor
+	padding: 40px
+
+	.qualities
+		text-align: center
+		margin-top: 80px
+
+		img
+			display: block
+			margin: auto
+			height: 50px
+
+		p
+			color: $headingColor
+			margin-bottom: 40px
+
+	.midCol
+		padding-top: 70px
+		img
+			height: 450px
+			display: block
+			margin: auto
+
+	.moreQualities
+		text-align: center
+		margin-top: 80px
+
+		img
+			display: block
+			margin: auto
+			height: 50px
+
+		p
+			color: $headingColor
+			margin-bottom: 40px
+
+	.QuoteButton
+		background: transparent
+		border: 2px solid $QuoteButtonColor
+		color: $QuoteButtonColor
+		border-radius: 2px
+		display: block
+		margin: auto
+		transition: 0.3s ease
+
+		&:hover
+			background-color: $QuoteButtonColor
+			color: white
+
+
+.ourTeam
+	text-align: center
+	padding: 20px 0 70px 0
+
+	img
+		height: 220px
+		// width: 300px
+		border-radius: 50%
+		transition: 0.3s ease
+		display: block
+		margin: auto
+		margin-top: 90px 
+
+		&:hover
+			box-shadow: 8px 8px 26px -6px black
+
+	.designation
+		color: $headingColor
+
+	h4
+		margin-top: 30px
+
+	ul
+		text-align: center
+		margin-left: -20px
+		margin-top: 20px
+		li
+			list-style: none
+			display: inline-block
+			margin-right: 25px
+
+			a
+				color: $headingColor
+				transition: 0.3s ease
+
+				&:hover
+					color: darken($QuoteButtonColor,10%)
+
+
+.locationScr
+	background: url("../images/ScreenBiz.png")
+
+
+
+
+footer
+	background: 
+		image: linear-gradient(rgba(50, 144, 212, 0.7),rgba(120, 109, 209,0.7)), url("../images/footer6.png")
+		// position: center
+		size: cover
+
+
+	.footerContent
+		// text-align: center
+		padding-top: 40px 
+		color: white
+		
+
+		.footerLogo
+			// margin-top: 10px
+			padding-right: 50px
+			margin-bottom: 60px
+			p
+				margin-top: 10px
+
+		.GetInTouch
+			// text-align: center
+			margin-bottom: 60px
+			ul
+				margin-top: 30px
+				list-style: none
+
+
+				li
+					margin-bottom: 10px
+
+					i
+						margin-right: 10px
+
+		.Links
+			text-align: center
+			margin-bottom: 60px
+			ul
+				margin-top: 30px
+				list-style: none
+				margin-left: -40px
+				
+
+				li
+					margin-bottom: 10px
+
+					a
+						color: white
+
+						&:hover
+							text-decoration: none
+
+	span.divider
+		height: 3px
+		width: 100%
+		background-color: white
+		margin-bottom: 30px
+
+	.copyright
+		text-align: center
+		color: white
+
+	.credit
+		font-size: 9px
+		margin-top: 20px
+		color: white
+		float: right
+
+		
+		a
+			color: white
+				
+
+
+@media(max-width: 1440px) and (min-width: 888px)
+	.navbar
+		background: transparent
+		border-bottom: none
+		padding: 10px 30px 0 30px
+		font-size: 15px
+
+		.collapse
+			ul
+				li
+					margin-left: 20px
+
+					a
+						color: white
+						transition: 0.3s ease
+
+						&:hover
+							transform: scale(1.2)
+
+@media(max-width: 887px)
+	.navbar
+		background-color: #3B5998
+
+		// button
+		// 	border: 1px solid red
+
+@media(max-width: 1230px)
+	.FirstSection
+		.FirstSectionContent
+			.rightSection
+				h1
+					font-size: 40px
+
+@media(max-width: 1018px)
+	.FirstSection
+		.FirstSectionContent
+			.leftSection
+				img
+					height: 250px
+			.rightSection
+				h1
+					font-size: 25px
+
+				p
+					font-size: 13px
+
+				.FirstButton
+					font-size: 13px
+
+				.SecondButton
+					font-size: 13px
+
+@media(max-width: 767px)
+	.FirstSection
+		.FirstSectionContent
+			margin-top: 150px
+			.leftSection
+				img
+					height: 250px
+			.rightSection
+				padding: 0
+
+
+@media(max-width: 420px)
+	.SecondSection
+		padding: 20px 0 70px 0
+		h4
+			color: $headingColor
+			text-align: center
+
+		.row
+			.col-sm-3
+				padding-top: 50px
+
+				img
+					height: 70px
+					display: block
+					margin: auto
+
+
+// @media(max-width: 991px)
+// 	.WhyUsSection
+// 		.midCol
+// 			img
+// 				display: block
+// 				margin: auto
+// 				height: 400px
+
+// @media(max-width: 767px)
+// 	.WhyUsSection
+// 		padding-bottom: 40px
+// 		.qualities
+// 			text-align: center
+// 			margin-top: 40px
+
+// 		.midCol
+// 			img
+// 				// display: block
+// 				// margin: auto
+// 				height: 180px
+
+// 		.moreQualities
+// 			text-align: center
+// 			margin-top: 40px
+
+
+//whyUsSection
+
+@media(max-width: 767px)
+	.whyUsSection
+		.midCol
+			img
+				height: 280px
+
+
+//form styles
+
+#form
+	padding-top: 40px
+	background-color: #8079B9
+
+.formDiv
+	background-color: white
+	padding: 80px 70px
+
+	p
+		font-size: 14px
+		color: #4A4A4A
+
+		span
+			color: #8079B9
+			margin-left: 6px
+			font-weight: bold
+
+	form
+		padding-top: 55px
+
+		.form-group
+			padding-top: 15px
+			input
+				height: 45px
+				border-radius: 30px
+				padding-left: 30px
+
+		button
+			margin-top: 40px
+			width: 100%
+			height: 45px
+			border-radius: 30px
+			border: 2px solid #8079B9
+			color: #8079B9
+			transition: 0.3s ease
+			// background-color: transparent
+
+			&:hover
+				background-color: #8079B9
+				color: white
+				border: none
+
+
+//Warranty Policies
+
+.logoSection
+	height: 80px
+	width: 100%
+	background-color: $QuoteButtonColor
+	padding: 7px 0 0 20px
+
+.warrantyPage
+	padding-bottom: 90px
+
+	h3
+		margin-top: 50px
+		text-align: center
+		font-weight: bold
+
+	span.dividerOne
+		@extend span.divider
+		background-color: $QuoteButtonColor
+
+	p.Disclaimer
+		margin-top: 30px
+		// font-size: 17px
+
+	span.dividerTwo
+		@extend span.divider
+		width: 230px
+		margin-bottom: 30px
+		background-color: $QuoteButtonColor
+
+	ul.warranties
+		li
+			// font-size: 17px
+			margin-bottom: 10px
+
+
+//TnC's
+
+.tnc
+	padding-bottom: 90px
+
+	h3
+		margin-top: 50px
+		text-align: center
+		font-weight: bold
+
+	h4
+		margin-top: 50px
+		text-align: center
+
+	span.dividerThree	
+		@extend span.divider
+		width: 250px
+		background-color: $QuoteButtonColor
+
+
+	span.dividerFour	
+		@extend span.divider
+		width: 180px
+		background-color: $QuoteButtonColor
+
+	span.dividerFive	
+		@extend span.divider
+		width: 180px
+		background-color: $QuoteButtonColor
+
+	span.dividerSix	
+		@extend span.divider
+		width: 80px
+		background-color: $QuoteButtonColor
+
+	span.dividerSeven
+		@extend span.divider
+		width: 330px
+		background-color: $QuoteButtonColor
+
+	span.dividerEight	
+		@extend span.divider
+		width: 120px
+		background-color: $QuoteButtonColor
+
+
+//getQuote page
+
+.MobilePic
+	text-align: center
+
+	.imageOne
+		background-image: url("../images/iphone5.jpg")
+		background-size: cover
+		height: 330px
+		width: 100%
+
+	.imageTwo
+		background: url("../images/iphone5s.jpg")
+
+	.imageThree
+		background: url("../images/iphone6.jpg")
+
+	.imageFour
+		background: url("../images/iphone6s.jpg")
+
+

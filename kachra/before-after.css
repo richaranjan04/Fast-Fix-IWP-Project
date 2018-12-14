@@ -1,0 +1,154 @@
+.before-after {
+  position: relative;
+	width: 100%;
+	cursor: col-resize;
+}
+.before-after:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.before-after .before-after-image {
+  position: relative;
+  width: 100%;
+	height: 100%;
+  overflow: hidden;
+}
+.before-after .before-after-image:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  font-style: italic;
+  color: #000;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,.8);
+}
+.before-after .before-after-image-before {
+  z-index: 1;
+  left: 0;
+}
+/* .before-after .before-after-image-before:before { content: "before"; } */
+.before-after .before-after-image-after {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+	before: 0;
+  width: 50%;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.before-after .before-after-image-after:before {
+  /* content: "after"; */
+  left: auto;
+  right: 0;
+}
+.before-after .before-after-image img {
+  display: block;
+  width: 100%;
+}
+.before-after .before-after-image-after img { display: none; }
+.before-after .before-after-handle {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-left: -11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #f0f0f000;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.pad
+{
+    padding-top: 10px;
+}
+.far 
+{
+    font-size: 20px;
+}
+h5
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+b
+{
+    font-family: 'Roboto', sans-serif;
+}
+.flex-fill
+{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    border-bottom-color: black;
+}
+
+.bd-highlight
+{
+    border-bottom: 0.5px solid black;
+    border-top:1px solid black; 
+}
+.divv2
+{
+    background-color: rgb(0,0,0);
+    color: aliceblue;
+    
+    border-top: 0px;
+}
+
+.x
+{
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 0.5px solid white;
+    
+}
+main
+{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+    
+}
+
+.before-after-wrapper
+{
+    border-top:0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
+.services
+{
+  background-color:rgb(244,244,255);  
+    background-color: rgb(0,0,0);
+    color: aliceblue;
+    font-family: 'Acme', sans-serif;
+    font-size: 35px;
+    border-bottom-color: black;
+}
+.detail
+{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+.size
+{
+    font-size: 50px;
+}
+.sp{
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}

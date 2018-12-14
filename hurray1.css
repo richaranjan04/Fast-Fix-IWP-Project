@@ -1,0 +1,34 @@
+.circle
+{
+    margin-top: 150px;
+    margin-left: 525px;
+    margin-right: 450px;
+    width:400px;
+    height:100px;
+    font-family:serif;
+}
+
+img
+{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.btn-danger
+{
+    height:40px;
+    width:400px;
+    margin-top: 300px;
+    
+}
+.btn-success
+{
+    margin-top: 5px;
+    height:40px;
+    width:400px;
+}
+h2
+{
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+}
