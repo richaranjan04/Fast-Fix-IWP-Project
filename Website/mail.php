@@ -86,12 +86,12 @@ if (mysqli_query($con, $sql))
     $mail->isSMTP();             
     $mail->Host = 'smtp.gmail.com';  
     $mail->SMTPAuth = true;         
-    $mail->Username = 'richabelair04@gmail.com';         
-    $mail->Password = 'richa0404';                       
+    $mail->Username = 'enter mail';         
+    $mail->Password = 'enter passs';                       
     $mail->SMTPSecure = 'tls';                           
     $mail->Port = 587;                                   
     
-    $mail->setFrom('richabelair04@gmail.com', 'FastFix');
+    $mail->setFrom('enter mail', 'FastFix');
     $mail->addAddress($e, 'Customer');     
     
     $mail->isHTML(true);                               
